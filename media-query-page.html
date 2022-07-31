@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    img{
+      vertical-align: bottom;
+    }
+
+    .banner img{
+      width: 100%;/* 所有图片都 width: 100%*/
+    }
+
+    /* 关于我们每一栏项目 */
+    .item  img{
+      width: 100%;/* 所有图片都 width: 100%*/
+    }
+    .item .text h3{
+      font-size: 24px;
+      text-align: center;
+    }
+    .item{
+      margin: 0 10px 40px;
+    }
+    /* 关于我们简介部分 */
+    .title h2{
+      text-align: center;
+      font-size: 46px;
+    }
+    .title p{
+      text-align: center;
+      font-size: 22px;
+    }
+    .title{
+      margin: 0 0px 20px;
+      padding: 30px 10px;
+      background-color: #ccc;
+    }
+    .item-group{
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+    }
+    .service{
+      margin: 60px 0 0;
+      background-color: #ff9;
+    }
+
+@media screen and (min-width: 768px) {
+    .item-group{
+      display: flex; /* 电脑：横行排列 */
+    }
+    .service .item{
+      display: flex; /* 电脑：横行排列 */
+    }
+    .service .item .pic,
+    .service .item .text{
+      width: 50%;
+      margin: 0;
+    }
+    .service .item .text{
+      display: flex; /* 电脑：横行排列 */
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+     
+      box-sizing: border-box; /*消除padding带来的副作用  */
+
+    }
+
+}
+
+
+  </style>
+  <body>
+    <div class="banner">
+      <img src="https://picsum.photos/1400/500" alt="" />
+    </div>
+
+    <div class="about">
+      <div class="wrap">
+        <div class="title">
+          <h2>关于我们</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repudiandae! Corporis dolore asperiores aperiam sint at vel dolor atque molestiae.</p>
+        </div>
+        <div class="item-group">
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/84/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/81/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/80/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="wrap">
+        <div class="title">
+          <h2>服务</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repudiandae! Corporis dolore asperiores aperiam sint at vel dolor atque molestiae.</p>
+        </div>
+        </div>
+        <div class="item-group">
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/68/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="wrap">
+        <div class="title">
+          <h2>产品</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repudiandae! Corporis dolore asperiores aperiam sint at vel dolor atque molestiae.</p>
+        </div>
+        <div class="item-group">
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/62/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/63/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/684/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+            <div class="item">
+            <div class="pic">
+              <img src="https://picsum.photos/id/65/300/200" alt="" />
+            </div>
+            <div class="text">
+              <h3>title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae doloribus nihil explicabo quasi obcaecati
+                dignissimos soluta ut aspernatur vitae? Maiores quibusdam
+                voluptatibus obcaecati nostrum similique accusantium tenetur sed
+                dolorem blanditiis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
