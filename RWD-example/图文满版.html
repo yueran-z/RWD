@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-color: #ccc;
+      background: linear-gradient(115deg #7bf 50%, transparent 50%) center
+          center / 100% 100%,
+        url('https://picsum.photos/id/684/1200/600') right center / auto 100%;
+    }
+
+    .container {
+      /* width: 1200px; RWD偷懒式*/
+      width: 100%;
+      min-width: 1440px;
+      height: 100%;
+      margin: auto;
+    }
+    .banner-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .banner-text h1 {
+      border-bottom: 1px solid #333;
+      font-style: 80px;
+      font-weight: 900;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+    }
+    .banner-text h1 small {
+      display: block; /* 文字换行 */
+      font-style: 53px;
+      font-weight: 700;
+    }
+    .banner-text h2 {
+      font-style: 50px;
+      font-weight: 700;
+    }
+    .banner-text p {
+      font-size: 30px;
+      font-weight: 300;
+    }
+  </style>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-text">
+          <h1>
+            <small
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Tempora, facilis.</small
+            >
+          </h1>
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt
+            hic fugit necessitatibus praesentium? Dolores culpa tempora fugit,
+            quasi at nobis molestias totam a laudantium odit facere. Sit,
+            pariatur beatae.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+      * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    body{
+      padding: 100px 0;
+    }
+    .wrap {
+      width: 1200px;
+      margin: auto;
+    }
+    .item{
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 70px;
+      /* background-color: #ccc; */
+    }
+    .item.pic img{width: 100%; vertical-align: middle;}
+    .item .pic{
+      width: 55%;/* 55% 合起来超过100%，flex会坏掉 */
+      flex-shrink: 0;
+    }
+    .item .text{
+      width: 55%;
+      flex-shrink: 0;
+
+      padding: 50px 30px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      /* background-color: #fa8; */
+    }
+    .item >:first-child{margin-right: -10%;}
+.item:nth-child(1) .text{background-color: #f0aec1;}
+.item:nth-child(2) .text{background-color: #2afdd0;}
+.item:nth-child(3) .text{background-color: #fec979;}
+.item:nth-child(4) .text{background-color: #f0aec1;}
+
+    .text h2{}
+    .text p{}
+
+
+
+</style>
+<body>
+  <div class="wrap">
+    <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/id/76/600/350" alt="">
+      </div>
+      <div class="text">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero sequi suscipit, nam fuga minus eum, in ab assumenda voluptates quasi aperiam praesentium ad ratione. Quas sapiente et sunt deleniti!</p>
+      </div>
+    </div>
+        <div class="item">
+                <div class="text">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero sequi suscipit, nam fuga minus eum, in ab assumenda voluptates quasi aperiam praesentium ad ratione. Quas sapiente et sunt deleniti!</p>
+      </div>
+  
+      <div class="pic">
+        <img src="https://picsum.photos/id/48/600/350" alt="">
+      </div>
+</div>
+    </div>
+
+
+        <div class="item">
+      <div class="pic">
+        <img src="https://picsum.photos/id/8/600/350" alt="">
+      </div>
+      <div class="text">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero sequi suscipit, nam fuga minus eum, in ab assumenda voluptates quasi aperiam praesentium ad ratione. Quas sapiente et sunt deleniti!</p>
+      </div>
+    </div>
+
+        <div class="item">
+      <div class="text">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vero sequi suscipit, nam fuga minus eum, in ab assumenda voluptates quasi aperiam praesentium ad ratione. Quas sapiente et sunt deleniti!</p>
+      </div>
+    
+      <div class="pic">
+        <img src="https://picsum.photos/id/18/600/350" alt="">
+      </div>
+      </div>
+  </div>
+</body>
+</html>
