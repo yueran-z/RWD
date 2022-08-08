@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .box {
+      width: 100%; /* 手机：一栏满版 */
+      height: 300px;
+
+    }
+    .box1 {
+      
+      background-color: #faa;/* 手机：粉红 */
+    }
+    .box2 {
+      background-color: #aaf;
+    }
+    @media screen and (min-width:768px) {
+      .box {
+        /* 桌机：两栏满版 */
+        width: 50%;
+        float: left;
+        background-color: #ff0;
+
+      }
+    }
+    @media screen and (min-width:1200px) {
+            .box {
+        /* 桌机：两栏满版 */
+        width: 50%;
+        float: left;
+        background-color: rgb(24, 224, 224);
+      }
+    }
+  </style>
+  <body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+  </body>
+</html>

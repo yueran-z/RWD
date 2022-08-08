@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box{
+    width: 600px;
+    margin:auto;
+  }
+  .item{
+    /* 600px 分3栏：每栏600/3 =width: 200px; */
+    /* margin:10px 200-20=180 */
+    /*padding: 10px; 180-20=160  */
+    /* border: 1px 每个2条每个扣掉2px 160-2=158 */
+    
+    width: 158px;
+    float: left;
+    margin:10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+  }
+</style>
+<body>
+  <div class="box">
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aut dolorem commodi unde, incidunt officiis quibusdam quaerat, obcaecati ipsa veritatis provident! Optio magnam autem saepe reiciendis voluptatem ab provident officia.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aut dolorem commodi unde, incidunt officiis quibusdam quaerat, obcaecati ipsa veritatis provident! Optio magnam autem saepe reiciendis voluptatem ab provident officia.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aut dolorem commodi unde, incidunt officiis quibusdam quaerat, obcaecati ipsa veritatis provident! Optio magnam autem saepe reiciendis voluptatem ab provident officia.</div>
+  </div>
+</body>
+</html>
